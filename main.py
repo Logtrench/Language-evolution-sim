@@ -7,6 +7,13 @@ def isVowel(s):
   else:
     return True
 
+def isConsonant(s):
+  if(isVowel):
+    return False
+  else:
+    return True
+
+
 #The evolution itself
 def evolveN(x):
   #this is the string to be built
@@ -221,7 +228,7 @@ def evolveS(x):
 
     if(a!=0):
       print("llo")
-      if(not isVowel(x[a-1])):
+      if(isConsonant(x[a-1])):
         print("helloq")
         c = c.replace("z","")
       
